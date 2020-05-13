@@ -1,14 +1,11 @@
-<!-- App.svelte -->
 <script>
   import { Router, Link, Route } from "svelte-routing";
   import Home from "./components/Home.svelte";
   import About from "./components/About.svelte";
   import Gallery from "./components/Gallery.svelte";
-
-  export let url = "";
 </script>
 
-<Router url="{url}">
+<Router>
   <nav>
     <Link to="/">Home</Link>
     <Link to="/About">About</Link>
